@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            label {
+                display: inline-block; 
+                margin-right: 10px;
+                width: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Registration</h1>
+        
+        <form action="processUser.jsp" method="post">
+            <fieldset>
+                <legend>User Detail</legend>
+                <label for="name">Name </label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br><br>
+                
+                <label for="surname">Surname </label>
+                <input type="text" id="surname" name="surname" placeholder="Enter your surname" required>
+                <br><br>
+                
+                <label for="pass">Password </label>
+                <input type="password" id="pass" name="pass" placeholder="Enter your password" required>
+                <br><br>
+                
+                <label>Gender</label>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label>
+                <br><br><!-- comment -->
+                
+                <label for="type">Type of User</label>
+                <select id="type" name="type" required>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+                <br><br>
+                
+                <label>Prefer Language</label>
+                <input type="checkbox" id="lang1" name="language" value="Malay">
+                <label for="lang1"> Malay</label>
+                <input type="checkbox" id="lang2" name="language" value="English">
+                <label for="lang2"> English</label>
+                <input type="checkbox" id="lang3" name="language" value="Mandarin">
+                <label for="lang3"> Mandarin</label>
+                <input type="checkbox" id="lang4" name="language" value="Tamil">
+                <label for="lang4"> Tamil</label>
+               
+                <br><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Cancel</button>
+                
+            </fieldset>
+        </form>
+            <script>
+           function myFunction() {
+             var x = document.getElementById("pass");
+             if (x.type === "password") {
+               x.type = "text";
+             } else {
+               x.type = "password";
+             }
+           }
+           </script>
+    </body>
+            <br><br>
+            <footer>&copy; 2024-Ezreena</footer>
+
+</html>
